@@ -1,0 +1,168 @@
+.admin-dashboard {
+  padding: 2rem 0;
+  min-height: calc(100vh - 80px);
+}
+
+.admin-dashboard h1 {
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tabs button {
+  background: none;
+  padding: 1rem 2rem;
+  border-bottom: 3px solid transparent;
+  color: #666;
+}
+
+.tabs button.active {
+  border-bottom-color: #007bff;
+  color: #007bff;
+}
+
+.admin-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.add-room-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.add-room-form h2 {
+  margin-bottom: 1.5rem;
+}
+
+.add-room-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-room-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.rooms-table, .bookings-table {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.rooms-table h2, .bookings-table h2 {
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .admin-content {
+    grid-template-columns: 1fr;
+  }
+  table {
+    font-size: 12px;
+  }
+  th, td {
+    padding: 0.5rem;
+  }
+}
+
+.status-badge-admin {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status-badge-admin.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge-admin.status-confirmed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge-admin.status-cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.btn-approve {
+  background: #28a745;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-approve:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.btn-reject {
+  background: #dc3545;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-reject:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+.status-text {
+  color: #666;
+  font-size: 13px;
+  font-style: italic;
+}
