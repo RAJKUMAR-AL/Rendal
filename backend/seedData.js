@@ -22,14 +22,14 @@ const seedData = async () => {
     const users = await User.insertMany([
       {
         name: 'John Doe',
-        email: 'user@example.com',
+        email: 'user@gmail.com',
         password: hashedPassword,
         phone: '1234567890',
         role: 'user'
       },
       {
         name: 'Admin User',
-        email: 'admin@example.com',
+        email: 'admin@gmail.com',
         password: hashedPassword,
         phone: '0987654321',
         role: 'admin'
@@ -42,162 +42,112 @@ const seedData = async () => {
       {
         title: 'Single Room in Shared Apartment',
         description: 'Comfortable single room with attached bathroom. Perfect for solo professionals. Shared kitchen and living area with other tenants.',
-        price: 450,
+        price: 7000,
         roomType: 'Single Room',
-        location: {
-          city: 'New York',
-          address: '123 Main Street, Manhattan',
-          coordinates: { lat: 40.7128, lng: -74.0060 }
-        },
+        location: { city: 'Chennai', address: 'Anna Nagar, Chennai', coordinates: { lat: 13.0850, lng: 80.2101 } },
         amenities: ['WiFi', 'Air Conditioning', 'Attached Bathroom', 'Bed', 'Wardrobe', 'Study Table'],
         images: ['https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800'],
-        capacity: 1,
-        availability: true
+        capacity: 1, availability: true
       },
       {
         title: 'Double Room for Two People',
         description: 'Spacious double room with two beds. Ideal for friends or colleagues working in the same city. Shared facilities.',
-        price: 650,
+        price: 11000,
         roomType: 'Double Room',
-        location: {
-          city: 'San Francisco',
-          address: '456 Tech Avenue, SOMA',
-          coordinates: { lat: 37.7749, lng: -122.4194 }
-        },
+        location: { city: 'Coimbatore', address: 'RS Puram, Coimbatore', coordinates: { lat: 11.0168, lng: 76.9558 } },
         amenities: ['WiFi', 'Air Conditioning', 'Two Beds', 'Wardrobe', 'Balcony', 'Shared Kitchen'],
         images: ['https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800'],
-        capacity: 2,
-        availability: true
+        capacity: 2, availability: true
       },
       {
         title: '1BHK Independent Room',
         description: 'Private 1BHK with bedroom, hall, and kitchen. Fully furnished with all modern amenities. Perfect for professionals seeking privacy.',
-        price: 800,
+        price: 16000,
         roomType: '1BHK',
-        location: {
-          city: 'Chicago',
-          address: '789 Business Blvd, Loop',
-          coordinates: { lat: 41.8781, lng: -87.6298 }
-        },
+        location: { city: 'Madurai', address: 'Anna Nagar, Madurai', coordinates: { lat: 9.9252, lng: 78.1198 } },
         amenities: ['WiFi', 'Air Conditioning', 'Kitchen', 'Washing Machine', 'TV', 'Parking'],
         images: ['https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800'],
-        capacity: 1,
-        availability: true
+        capacity: 1, availability: true
       },
       {
         title: '2BHK Furnished Room',
         description: 'Spacious 2BHK with two bedrooms, hall, and kitchen. Ideal for small families or two professionals. Fully furnished.',
-        price: 1200,
+        price: 25000,
         roomType: '2BHK',
-        location: {
-          city: 'Los Angeles',
-          address: '321 Sunset Boulevard, Hollywood',
-          coordinates: { lat: 34.0522, lng: -118.2437 }
-        },
+        location: { city: 'Trichy', address: 'Thillai Nagar, Trichy', coordinates: { lat: 10.7905, lng: 78.7047 } },
         amenities: ['WiFi', 'Air Conditioning', 'Kitchen', 'Washing Machine', 'TV', 'Parking', 'Balcony'],
         images: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800'],
-        capacity: 2,
-        availability: true
+        capacity: 2, availability: true
       },
       {
-        title: 'Budget Single Room Near Metro',
+        title: 'Budget Single Room Near Bus Stand',
         description: 'Affordable single room with basic amenities. Clean and well-maintained. Shared bathroom and kitchen facilities.',
-        price: 350,
+        price: 5500,
         roomType: 'Single Room',
-        location: {
-          city: 'Boston',
-          address: '555 Metro Street, Cambridge',
-          coordinates: { lat: 42.3601, lng: -71.0589 }
-        },
+        location: { city: 'Salem', address: 'Fairlands, Salem', coordinates: { lat: 11.6643, lng: 78.1460 } },
         amenities: ['WiFi', 'Bed', 'Wardrobe', 'Shared Kitchen', 'Shared Bathroom'],
         images: ['https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800'],
-        capacity: 1,
-        availability: true
+        capacity: 1, availability: true
       },
       {
         title: 'Premium Double Room with Attached Bath',
         description: 'Well-furnished double room with attached bathroom. AC and modern amenities. Shared kitchen with other tenants.',
-        price: 750,
+        price: 13000,
         roomType: 'Double Room',
-        location: {
-          city: 'Austin',
-          address: '888 Arts Lane, Downtown',
-          coordinates: { lat: 30.2672, lng: -97.7431 }
-        },
+        location: { city: 'Tirunelveli', address: 'Palayamkottai, Tirunelveli', coordinates: { lat: 8.7139, lng: 77.7567 } },
         amenities: ['WiFi', 'Air Conditioning', 'Attached Bathroom', 'Two Beds', 'Wardrobe', 'Shared Kitchen'],
         images: ['https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800'],
-        capacity: 2,
-        availability: true
+        capacity: 2, availability: true
       },
       {
-        title: 'Cozy 1BHK Near Business District',
+        title: 'Cozy 1BHK Near IT Park',
         description: 'Compact 1BHK with all essential amenities. Perfect for working professionals. Independent entrance and kitchen.',
-        price: 700,
+        price: 14000,
         roomType: '1BHK',
-        location: {
-          city: 'Seattle',
-          address: '234 Pike Street, Downtown',
-          coordinates: { lat: 47.6062, lng: -122.3321 }
-        },
+        location: { city: 'Chennai', address: 'OMR Road, Chennai', coordinates: { lat: 12.9010, lng: 80.2279 } },
         amenities: ['WiFi', 'Kitchen', 'Bed', 'Wardrobe', 'Study Table', 'Geyser'],
         images: ['https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800'],
-        capacity: 1,
-        availability: true
+        capacity: 1, availability: true
       },
       {
         title: 'Spacious 2BHK for Families',
         description: 'Large 2BHK with separate bedrooms, living room, and modular kitchen. Suitable for small families or two professionals.',
-        price: 1400,
+        price: 28000,
         roomType: '2BHK',
-        location: {
-          city: 'Denver',
-          address: '567 Mountain View, Capitol Hill',
-          coordinates: { lat: 39.7392, lng: -104.9903 }
-        },
+        location: { city: 'Coimbatore', address: 'Peelamedu, Coimbatore', coordinates: { lat: 11.0300, lng: 77.0200 } },
         amenities: ['WiFi', 'Air Conditioning', 'Modular Kitchen', 'Washing Machine', 'TV', 'Parking', 'Gym Access'],
         images: ['https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800'],
-        capacity: 3,
-        availability: true
+        capacity: 3, availability: true
       },
       {
         title: 'Single Room with Work Desk',
         description: 'Perfect for remote workers. Single room with dedicated workspace, high-speed WiFi, and comfortable bed.',
-        price: 500,
+        price: 8000,
         roomType: 'Single Room',
-        location: {
-          city: 'Portland',
-          address: '890 Pearl District, Northwest',
-          coordinates: { lat: 45.5152, lng: -122.6784 }
-        },
+        location: { city: 'Vellore', address: 'Katpadi, Vellore', coordinates: { lat: 12.9165, lng: 79.1325 } },
         amenities: ['WiFi', 'Work Desk', 'Ergonomic Chair', 'Bed', 'Wardrobe', 'Shared Kitchen'],
         images: ['https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800'],
-        capacity: 1,
-        availability: true
+        capacity: 1, availability: true
       },
       {
         title: 'Modern 1BHK with Balcony',
         description: 'Newly renovated 1BHK with private balcony. Fully furnished with modern appliances and fixtures.',
-        price: 900,
+        price: 18000,
         roomType: '1BHK',
-        location: {
-          city: 'Miami',
-          address: '123 Ocean Drive, South Beach',
-          coordinates: { lat: 25.7617, lng: -80.1918 }
-        },
+        location: { city: 'Madurai', address: 'KK Nagar, Madurai', coordinates: { lat: 9.9312, lng: 78.1100 } },
         amenities: ['WiFi', 'Air Conditioning', 'Kitchen', 'Balcony', 'Washing Machine', 'Parking'],
         images: ['https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=800'],
-        capacity: 1,
-        availability: true
+        capacity: 1, availability: true
       }
     ]);
     console.log('Created sample rooms');
 
     console.log('\n=== Sample Login Credentials ===');
     console.log('\nRegular User:');
-    console.log('Email: user@example.com');
+    console.log('Email: user@gmail.com');
     console.log('Password: password123');
     console.log('\nAdmin User:');
-    console.log('Email: admin@example.com');
+    console.log('Email: admin@gmail.com');
     console.log('Password: password123');
     console.log('\n================================\n');
 

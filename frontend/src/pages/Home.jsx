@@ -201,8 +201,8 @@ function Home({ user }) {
                     {room.location.city}
                   </p>
                   <p className="room-price">
-                    <DollarSign size={16} />
-                    ${room.price}/month
+                    <span>₹</span>
+                    {room.price.toLocaleString('en-IN')}/month
                   </p>
                   <div className="room-amenities">
                     {room.amenities.slice(0, 3).map((amenity, i) => (
@@ -255,7 +255,7 @@ function Home({ user }) {
 
                 <div className="booking-summary">
                   <p>Duration: {days} day(s)</p>
-                  <p className="total">Total: ${totalPrice}</p>
+                  <p className="total">Total: ₹{totalPrice.toLocaleString('en-IN')}</p>
                 </div>
 
                 <button 
@@ -334,7 +334,7 @@ function Home({ user }) {
                     <p><strong>Check-in:</strong> {dateRange[0].toLocaleDateString()}</p>
                     <p><strong>Check-out:</strong> {dateRange[1].toLocaleDateString()}</p>
                     <p><strong>Duration:</strong> {days} day(s)</p>
-                    <p className="total">Total Amount: ${totalPrice}</p>
+                    <p className="total">Total Amount: ₹{totalPrice.toLocaleString('en-IN')}</p>
                   </div>
 
                   <button

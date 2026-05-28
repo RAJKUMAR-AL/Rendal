@@ -83,8 +83,8 @@ function RoomDetails({ user }) {
               {room.location.address}, {room.location.city}
             </p>
             <p className="price">
-              <DollarSign size={24} />
-              ${room.price}/month
+              <span>₹</span>
+              {room.price.toLocaleString('en-IN')}/month
             </p>
             <p className="capacity">
               <Users size={20} />
@@ -116,7 +116,7 @@ function RoomDetails({ user }) {
             />
             <div className="booking-summary">
               <p>Duration: {days} day(s)</p>
-              <p className="total">Total: ${totalPrice}</p>
+              <p className="total">Total: ₹{totalPrice.toLocaleString('en-IN')}</p>
             </div>
             <button
               onClick={handleBooking}

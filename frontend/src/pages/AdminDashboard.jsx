@@ -194,7 +194,7 @@ function AdminDashboard() {
                       <td>{room.title}</td>
                       <td>{room.roomType}</td>
                       <td>{room.location.city}</td>
-                      <td>${room.price}</td>
+                      <td>₹{room.price.toLocaleString('en-IN')}</td>
                       <td>
                         <button onClick={() => handleDelete(room._id)} className="btn-delete">
                           Delete
@@ -230,7 +230,7 @@ function AdminDashboard() {
                     <td>{booking.room?.title}</td>
                     <td>{new Date(booking.checkIn).toLocaleDateString()}</td>
                     <td>{new Date(booking.checkOut).toLocaleDateString()}</td>
-                    <td>${booking.totalPrice}</td>
+                    <td>₹{booking.totalPrice.toLocaleString('en-IN')}</td>
                     <td>
                       <span className={`status-badge-admin status-${booking.status}`}>
                         {booking.status}

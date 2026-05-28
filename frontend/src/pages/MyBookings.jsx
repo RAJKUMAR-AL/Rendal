@@ -52,8 +52,8 @@ function MyBookings() {
                     {formatDate(booking.checkIn)} - {formatDate(booking.checkOut)}
                   </p>
                   <p className="booking-price">
-                    <DollarSign size={16} />
-                    ${booking.totalPrice}
+                    <span>₹</span>
+                    {booking.totalPrice.toLocaleString('en-IN')}
                   </p>
                   {booking.customerDetails && (
                     <div className="customer-info">
