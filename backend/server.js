@@ -13,9 +13,20 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+// CORS - allow all origins for deployment
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
+
+// Health check route
+app.get('/', (req, res) => {
+  res.json({ message: 'RoomRental API is running ✅' });
+});
 
 app.use('/api/auth', authRoutes);
 app.use('/api/rooms', roomRoutes);
