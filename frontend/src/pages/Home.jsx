@@ -179,10 +179,27 @@ function Home({ user }) {
         </div>
       </div>
 
-      <div className="container rooms-section">
-        <h2>🏠 Explore Available Rooms</h2>
-        <p className="section-subtitle">Handpicked rooms perfect for your work stay</p>
-        <div className="rooms-grid">
+      <div className="rooms-section">
+        <div className="rooms-header-banner">
+          <div className="container">
+            <div className="rooms-header-content">
+              <h2>Explore Available Rooms</h2>
+              <p>Handpicked rooms across Tamil Nadu — comfort meets affordability</p>
+              <div className="rooms-header-tags">
+                <span className="header-tag">🛏️ Single Room</span>
+                <span className="header-tag">🛏️🛏️ Double Room</span>
+                <span className="header-tag">🏠 1BHK</span>
+                <span className="header-tag">🏡 2BHK</span>
+                <span className="header-tag">✅ {rooms.length} Available</span>
+                <span className="header-tag">📍 Tamil Nadu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="rooms-grid-wrapper">
+          <div className="container">
+            <div className="rooms-grid">
           {rooms.map(room => (
             <div key={room._id} className="room-card">
               <Link to={`/room/${room._id}`} className="room-card-link">
@@ -221,6 +238,8 @@ function Home({ user }) {
               </div>
             </div>
           ))}
+        </div>
+          </div>
         </div>
       </div>
 

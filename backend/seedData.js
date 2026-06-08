@@ -130,14 +130,64 @@ const seedData = async () => {
         capacity: 1, availability: true
       },
       {
-        title: 'Modern 1BHK with Balcony',
-        description: 'Newly renovated 1BHK with private balcony. Fully furnished with modern appliances and fixtures.',
-        price: 18000,
-        roomType: '1BHK',
-        location: { city: 'Madurai', address: 'KK Nagar, Madurai', coordinates: { lat: 9.9312, lng: 78.1100 } },
-        amenities: ['WiFi', 'Air Conditioning', 'Kitchen', 'Balcony', 'Washing Machine', 'Parking'],
-        images: ['https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=800'],
+        title: 'Budget Double Room - Erode',
+        description: 'Affordable double room near bus stand. Clean and well maintained with basic amenities for two.',
+        price: 9500,
+        roomType: 'Double Room',
+        location: { city: 'Erode', address: 'Perundurai Road, Erode', coordinates: { lat: 11.3410, lng: 77.7172 } },
+        amenities: ['WiFi', 'Two Beds', 'Wardrobe', 'Shared Kitchen', 'Shared Bathroom'],
+        images: ['https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800'],
+        capacity: 2, availability: true
+      },
+      {
+        title: '2BHK Premium - Thanjavur',
+        description: 'Spacious 2BHK near temple town. Fully furnished with modern kitchen and living room.',
+        price: 22000,
+        roomType: '2BHK',
+        location: { city: 'Thanjavur', address: 'Medical College Road, Thanjavur', coordinates: { lat: 10.7870, lng: 79.1378 } },
+        amenities: ['WiFi', 'AC', 'Kitchen', 'Washing Machine', 'TV', 'Parking', 'Balcony'],
+        images: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800'],
+        capacity: 2, availability: true
+      },
+      {
+        title: 'Single Room - Nagercoil',
+        description: 'Clean and cozy single room near city center. Ideal for solo working professionals.',
+        price: 6000,
+        roomType: 'Single Room',
+        location: { city: 'Nagercoil', address: 'Krishnankovil Road, Nagercoil', coordinates: { lat: 8.1833, lng: 77.4119 } },
+        amenities: ['WiFi', 'Bed', 'Wardrobe', 'Attached Bathroom', 'Geyser'],
+        images: ['https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800'],
         capacity: 1, availability: true
+      },
+      {
+        title: '1BHK Near Railway Station - Tiruppur',
+        description: 'Well-maintained 1BHK close to railway station and textile market. Fully furnished for professionals.',
+        price: 12000,
+        roomType: '1BHK',
+        location: { city: 'Tiruppur', address: 'Avinashi Road, Tiruppur', coordinates: { lat: 11.1085, lng: 77.3411 } },
+        amenities: ['WiFi', 'AC', 'Kitchen', 'Bed', 'Wardrobe', 'Geyser'],
+        images: ['https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800'],
+        capacity: 1, availability: true
+      },
+      {
+        title: 'Double Room - Kumbakonam',
+        description: 'Spacious double room in temple city. Shared kitchen and attached bathroom. Ideal for two people.',
+        price: 10000,
+        roomType: 'Double Room',
+        location: { city: 'Kumbakonam', address: 'TSR Big Street, Kumbakonam', coordinates: { lat: 10.9602, lng: 79.3845 } },
+        amenities: ['WiFi', 'Two Beds', 'AC', 'Attached Bathroom', 'Wardrobe', 'Shared Kitchen'],
+        images: ['https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800'],
+        capacity: 2, availability: true
+      },
+      {
+        title: '2BHK Luxury - Ooty',
+        description: 'Premium 2BHK in hill station city. Cool climate, fully furnished with modern amenities and mountain view.',
+        price: 24000,
+        roomType: '2BHK',
+        location: { city: 'Ooty', address: 'Charring Cross, Ooty', coordinates: { lat: 11.4102, lng: 76.6950 } },
+        amenities: ['WiFi', 'AC', 'Kitchen', 'Washing Machine', 'TV', 'Parking', 'Mountain View'],
+        images: ['https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800'],
+        capacity: 2, availability: true
       }
     ]);
     console.log('Created sample rooms');
