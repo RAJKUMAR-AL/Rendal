@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import api from '../utils/api';
 import './AdminDashboard.css';
 
 function AdminDashboard() {
@@ -18,7 +19,7 @@ function AdminDashboard() {
 
   const fetchRooms = async () => {
     try {
-      const { data } = await axios.get('/api/rooms');
+      const { data } = await api.get('/api/rooms');
       setRooms(data);
     } catch (error) {
       console.error('Error:', error);
@@ -28,7 +29,7 @@ function AdminDashboard() {
   const fetchBookings = async () => {
     try {
       const token = localStorage.getItem('token');
-      const { data } = await axios.get('/api/bookings', {
+      const { data } = await api.get('/api/bookings', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setBookings(data);
@@ -48,7 +49,7 @@ function AdminDashboard() {
         amenities: formData.amenities.split(',').map(a => a.trim()),
         images: formData.images.split(',').map(i => i.trim())
       };
-      await axios.post('/api/rooms', roomData, {
+      await api.post('/api/rooms', roomData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert('Room added successfully');
@@ -63,7 +64,7 @@ function AdminDashboard() {
     if (!confirm('Delete this room?')) return;
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`/api/rooms/${id}`, {
+      await api.delete(`/api/rooms/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       fetchRooms();
@@ -81,7 +82,7 @@ function AdminDashboard() {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.put(`/api/bookings/${bookingId}`, 
+      await api.put(`/api/bookings/${bookingId}`, 
         { status },
         { headers: { Authorization: `Bearer ${token}` } }
       );

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import api from '../utils/api';
 import { Calendar, MapPin, DollarSign } from 'lucide-react';
 import './MyBookings.css';
 
@@ -13,7 +14,7 @@ function MyBookings() {
   const fetchBookings = async () => {
     try {
       const token = localStorage.getItem('token');
-      const { data } = await axios.get('/api/bookings/my-bookings', {
+      const { data } = await api.get('/api/bookings/my-bookings', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setBookings(data);

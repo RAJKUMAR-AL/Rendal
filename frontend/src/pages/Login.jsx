@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
+import api from '../utils/api';
 import { LogIn, Mail, Lock, Home } from 'lucide-react';
 import './Auth.css';
 
@@ -15,7 +16,7 @@ function Login({ setUser }) {
     setLoading(true);
     setError('');
     try {
-      const { data } = await axios.post('/api/auth/login', formData);
+      const { data } = await api.post('/api/auth/login', formData);
       localStorage.setItem('token', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
       setUser(data.user);

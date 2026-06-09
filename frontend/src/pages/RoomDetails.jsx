@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import api from '../utils/api';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { MapPin, DollarSign, Users } from 'lucide-react';
@@ -19,7 +20,7 @@ function RoomDetails({ user }) {
 
   const fetchRoom = async () => {
     try {
-      const { data } = await axios.get(`/api/rooms/${id}`);
+      const { data } = await api.get(`/api/rooms/${id}`);
       setRoom(data);
     } catch (error) {
       console.error('Error fetching room:', error);
@@ -38,7 +39,7 @@ function RoomDetails({ user }) {
       const totalPrice = room.price * days;
 
       const token = localStorage.getItem('token');
-      await axios.post('/api/bookings', {
+      await api.post('/api/bookings', {
         room: room._id,
         checkIn: dateRange[0],
         checkOut: dateRange[1],
