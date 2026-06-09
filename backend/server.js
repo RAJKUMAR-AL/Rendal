@@ -15,7 +15,7 @@ const app = express();
 
 // CORS - allow all origins for deployment
 app.use(cors({
-  origin: '*',
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'https://rendal-frontend.vercel.app', 'https://rendal.vercel.app'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
