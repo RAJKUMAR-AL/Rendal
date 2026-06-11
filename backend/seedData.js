@@ -178,16 +178,6 @@ const seedData = async () => {
         amenities: ['WiFi', 'Two Beds', 'AC', 'Attached Bathroom', 'Wardrobe', 'Shared Kitchen'],
         images: ['https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800'],
         capacity: 2, availability: true
-      },
-      {
-        title: '2BHK Luxury - Ooty',
-        description: 'Premium 2BHK in hill station city. Cool climate, fully furnished with modern amenities and mountain view.',
-        price: 24000,
-        roomType: '2BHK',
-        location: { city: 'Ooty', address: 'Charring Cross, Ooty', coordinates: { lat: 11.4102, lng: 76.6950 } },
-        amenities: ['WiFi', 'AC', 'Kitchen', 'Washing Machine', 'TV', 'Parking', 'Mountain View'],
-        images: ['https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800'],
-        capacity: 2, availability: true
       }
     ]);
     console.log('Created sample rooms');
