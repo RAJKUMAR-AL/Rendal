@@ -1,0 +1,111 @@
+.bubble-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Bubbles ── */
+.bubble {
+  position: absolute;
+  bottom: -150px;
+  border-radius: 50%;
+  opacity: 0.15;
+  animation: riseBubble linear infinite;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(102,126,234,0.4));
+  border: 1px solid rgba(102,126,234,0.3);
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.5);
+}
+
+@keyframes riseBubble {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-50vh) translateX(30px) scale(1.05);
+    opacity: 0.15;
+  }
+  100% {
+    transform: translateY(-110vh) translateX(-20px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Generate 20 bubbles with different sizes, positions, speeds */
+.bubble-1  { left: 5%;  width: 40px;  height: 40px;  animation-duration: 8s;  animation-delay: 0s; }
+.bubble-2  { left: 10%; width: 20px;  height: 20px;  animation-duration: 12s; animation-delay: 1s; }
+.bubble-3  { left: 18%; width: 55px;  height: 55px;  animation-duration: 10s; animation-delay: 2s; }
+.bubble-4  { left: 25%; width: 30px;  height: 30px;  animation-duration: 7s;  animation-delay: 0.5s; }
+.bubble-5  { left: 33%; width: 45px;  height: 45px;  animation-duration: 11s; animation-delay: 3s; }
+.bubble-6  { left: 40%; width: 25px;  height: 25px;  animation-duration: 9s;  animation-delay: 1.5s; }
+.bubble-7  { left: 48%; width: 60px;  height: 60px;  animation-duration: 13s; animation-delay: 4s; }
+.bubble-8  { left: 55%; width: 35px;  height: 35px;  animation-duration: 8s;  animation-delay: 2.5s; }
+.bubble-9  { left: 63%; width: 20px;  height: 20px;  animation-duration: 10s; animation-delay: 0s; }
+.bubble-10 { left: 70%; width: 50px;  height: 50px;  animation-duration: 14s; animation-delay: 3.5s; }
+.bubble-11 { left: 78%; width: 28px;  height: 28px;  animation-duration: 9s;  animation-delay: 1s; }
+.bubble-12 { left: 85%; width: 42px;  height: 42px;  animation-duration: 11s; animation-delay: 2s; }
+.bubble-13 { left: 92%; width: 22px;  height: 22px;  animation-duration: 7s;  animation-delay: 4s; }
+.bubble-14 { left: 15%; width: 65px;  height: 65px;  animation-duration: 15s; animation-delay: 5s; }
+.bubble-15 { left: 58%; width: 18px;  height: 18px;  animation-duration: 8s;  animation-delay: 1.5s; }
+.bubble-16 { left: 72%; width: 38px;  height: 38px;  animation-duration: 12s; animation-delay: 0.5s; }
+.bubble-17 { left: 30%; width: 52px;  height: 52px;  animation-duration: 10s; animation-delay: 3s; }
+.bubble-18 { left: 45%; width: 24px;  height: 24px;  animation-duration: 9s;  animation-delay: 2s; }
+.bubble-19 { left: 82%; width: 44px;  height: 44px;  animation-duration: 13s; animation-delay: 4.5s; }
+.bubble-20 { left: 95%; width: 30px;  height: 30px;  animation-duration: 11s; animation-delay: 1s; }
+
+/* ── Snowflakes ── */
+.snowflake {
+  position: absolute;
+  top: -30px;
+  color: rgba(102,126,234,0.25);
+  font-size: 1.2rem;
+  animation: fallSnow linear infinite;
+  user-select: none;
+}
+
+@keyframes fallSnow {
+  0% {
+    transform: translateY(-30px) rotate(0deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.snowflake-1  { left: 3%;  font-size: 0.9rem; animation-duration: 10s; animation-delay: 0s; }
+.snowflake-2  { left: 8%;  font-size: 1.4rem; animation-duration: 12s; animation-delay: 1s; }
+.snowflake-3  { left: 14%; font-size: 0.8rem; animation-duration: 8s;  animation-delay: 2s; }
+.snowflake-4  { left: 20%; font-size: 1.6rem; animation-duration: 14s; animation-delay: 0.5s; }
+.snowflake-5  { left: 26%; font-size: 1rem;   animation-duration: 11s; animation-delay: 3s; }
+.snowflake-6  { left: 32%; font-size: 0.7rem; animation-duration: 9s;  animation-delay: 1.5s; }
+.snowflake-7  { left: 38%; font-size: 1.3rem; animation-duration: 13s; animation-delay: 4s; }
+.snowflake-8  { left: 44%; font-size: 0.9rem; animation-duration: 10s; animation-delay: 2.5s; }
+.snowflake-9  { left: 50%; font-size: 1.5rem; animation-duration: 15s; animation-delay: 0s; }
+.snowflake-10 { left: 56%; font-size: 0.8rem; animation-duration: 8s;  animation-delay: 3.5s; }
+.snowflake-11 { left: 62%; font-size: 1.2rem; animation-duration: 12s; animation-delay: 1s; }
+.snowflake-12 { left: 68%; font-size: 0.6rem; animation-duration: 9s;  animation-delay: 2s; }
+.snowflake-13 { left: 74%; font-size: 1.4rem; animation-duration: 11s; animation-delay: 4s; }
+.snowflake-14 { left: 80%; font-size: 1rem;   animation-duration: 13s; animation-delay: 1.5s; }
+.snowflake-15 { left: 86%; font-size: 0.9rem; animation-duration: 10s; animation-delay: 0.5s; }
+.snowflake-16 { left: 91%; font-size: 1.3rem; animation-duration: 14s; animation-delay: 3s; }
+.snowflake-17 { left: 96%; font-size: 0.7rem; animation-duration: 8s;  animation-delay: 2s; }
+.snowflake-18 { left: 11%; font-size: 1.1rem; animation-duration: 11s; animation-delay: 5s; }
+.snowflake-19 { left: 42%; font-size: 0.8rem; animation-duration: 9s;  animation-delay: 4.5s; }
+.snowflake-20 { left: 65%; font-size: 1.5rem; animation-duration: 12s; animation-delay: 1s; }
+.snowflake-21 { left: 7%;  font-size: 0.6rem; animation-duration: 10s; animation-delay: 2.5s; }
+.snowflake-22 { left: 22%; font-size: 1.2rem; animation-duration: 13s; animation-delay: 0s; }
+.snowflake-23 { left: 36%; font-size: 0.9rem; animation-duration: 9s;  animation-delay: 3.5s; }
+.snowflake-24 { left: 53%; font-size: 1.4rem; animation-duration: 14s; animation-delay: 1.5s; }
+.snowflake-25 { left: 77%; font-size: 0.7rem; animation-duration: 11s; animation-delay: 4s; }
+.snowflake-26 { left: 88%; font-size: 1.1rem; animation-duration: 8s;  animation-delay: 0.5s; }
+.snowflake-27 { left: 16%; font-size: 1.3rem; animation-duration: 15s; animation-delay: 2s; }
+.snowflake-28 { left: 47%; font-size: 0.8rem; animation-duration: 10s; animation-delay: 3s; }
+.snowflake-29 { left: 70%; font-size: 1rem;   animation-duration: 12s; animation-delay: 1s; }
+.snowflake-30 { left: 93%; font-size: 0.9rem; animation-duration: 9s;  animation-delay: 4.5s; }

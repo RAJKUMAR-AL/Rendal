@@ -6,7 +6,9 @@
 /* ── Rooms Section ── */
 .rooms-section {
   padding: 0 0 5rem;
-  background: #f8f7ff;
+  background: linear-gradient(180deg, #f0f2ff 0%, #ffffff 60%, #f5f3ff 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .rooms-header-banner {

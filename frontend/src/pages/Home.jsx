@@ -7,6 +7,7 @@ import 'react-calendar/dist/Calendar.css';
 import { MapPin, DollarSign, Shield, Clock, Star, Home as HomeIcon, Sparkles, X } from 'lucide-react';
 import './Home.css';
 import './WelcomeBanner.css';
+import BubbleEffect from '../components/BubbleEffect';
 
 function Home({ user }) {
   const [rooms, setRooms] = useState([]);
@@ -181,6 +182,7 @@ function Home({ user }) {
       </div>
 
       <div className="rooms-section">
+        <BubbleEffect />
         <div className="rooms-header-banner">
           <div className="container">
             <div className="rooms-header-content">
