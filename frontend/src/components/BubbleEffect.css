@@ -9,103 +9,102 @@
   z-index: 0;
 }
 
-/* ── Bubbles ── */
+/* ── Colorful Bubbles ── */
 .bubble {
   position: absolute;
   bottom: -150px;
   border-radius: 50%;
-  opacity: 0.15;
   animation: riseBubble linear infinite;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(102,126,234,0.4));
-  border: 1px solid rgba(102,126,234,0.3);
-  box-shadow: inset 0 0 10px rgba(255,255,255,0.5);
 }
 
 @keyframes riseBubble {
   0% {
-    transform: translateY(0) translateX(0) scale(1);
-    opacity: 0.2;
+    transform: translateY(0) translateX(0);
+    opacity: 0.9;
   }
   50% {
-    transform: translateY(-50vh) translateX(30px) scale(1.05);
-    opacity: 0.15;
+    transform: translateY(-50vh) translateX(30px);
+    opacity: 0.7;
   }
   100% {
-    transform: translateY(-110vh) translateX(-20px) scale(0.8);
+    transform: translateY(-110vh) translateX(-20px);
     opacity: 0;
   }
 }
 
-/* Generate 20 bubbles with different sizes, positions, speeds */
-.bubble-1  { left: 5%;  width: 40px;  height: 40px;  animation-duration: 8s;  animation-delay: 0s; }
-.bubble-2  { left: 10%; width: 20px;  height: 20px;  animation-duration: 12s; animation-delay: 1s; }
-.bubble-3  { left: 18%; width: 55px;  height: 55px;  animation-duration: 10s; animation-delay: 2s; }
-.bubble-4  { left: 25%; width: 30px;  height: 30px;  animation-duration: 7s;  animation-delay: 0.5s; }
-.bubble-5  { left: 33%; width: 45px;  height: 45px;  animation-duration: 11s; animation-delay: 3s; }
-.bubble-6  { left: 40%; width: 25px;  height: 25px;  animation-duration: 9s;  animation-delay: 1.5s; }
-.bubble-7  { left: 48%; width: 60px;  height: 60px;  animation-duration: 13s; animation-delay: 4s; }
-.bubble-8  { left: 55%; width: 35px;  height: 35px;  animation-duration: 8s;  animation-delay: 2.5s; }
-.bubble-9  { left: 63%; width: 20px;  height: 20px;  animation-duration: 10s; animation-delay: 0s; }
-.bubble-10 { left: 70%; width: 50px;  height: 50px;  animation-duration: 14s; animation-delay: 3.5s; }
-.bubble-11 { left: 78%; width: 28px;  height: 28px;  animation-duration: 9s;  animation-delay: 1s; }
-.bubble-12 { left: 85%; width: 42px;  height: 42px;  animation-duration: 11s; animation-delay: 2s; }
-.bubble-13 { left: 92%; width: 22px;  height: 22px;  animation-duration: 7s;  animation-delay: 4s; }
-.bubble-14 { left: 15%; width: 65px;  height: 65px;  animation-duration: 15s; animation-delay: 5s; }
-.bubble-15 { left: 58%; width: 18px;  height: 18px;  animation-duration: 8s;  animation-delay: 1.5s; }
-.bubble-16 { left: 72%; width: 38px;  height: 38px;  animation-duration: 12s; animation-delay: 0.5s; }
-.bubble-17 { left: 30%; width: 52px;  height: 52px;  animation-duration: 10s; animation-delay: 3s; }
-.bubble-18 { left: 45%; width: 24px;  height: 24px;  animation-duration: 9s;  animation-delay: 2s; }
-.bubble-19 { left: 82%; width: 44px;  height: 44px;  animation-duration: 13s; animation-delay: 4.5s; }
-.bubble-20 { left: 95%; width: 30px;  height: 30px;  animation-duration: 11s; animation-delay: 1s; }
+.bubble-1  { left: 5%;  width: 50px;  height: 50px;  background: radial-gradient(circle at 30% 30%, #ff6b9d, #c44dff); animation-duration: 8s;  animation-delay: 0s; box-shadow: 0 0 20px #ff6b9d; }
+.bubble-2  { left: 10%; width: 30px;  height: 30px;  background: radial-gradient(circle at 30% 30%, #00d2ff, #3a7bd5); animation-duration: 12s; animation-delay: 1s; box-shadow: 0 0 15px #00d2ff; }
+.bubble-3  { left: 18%; width: 65px;  height: 65px;  background: radial-gradient(circle at 30% 30%, #f7971e, #ffd200); animation-duration: 10s; animation-delay: 2s; box-shadow: 0 0 25px #f7971e; }
+.bubble-4  { left: 25%; width: 40px;  height: 40px;  background: radial-gradient(circle at 30% 30%, #56ab2f, #a8e063); animation-duration: 7s;  animation-delay: 0.5s; box-shadow: 0 0 18px #56ab2f; }
+.bubble-5  { left: 33%; width: 55px;  height: 55px;  background: radial-gradient(circle at 30% 30%, #ee0979, #ff6a00); animation-duration: 11s; animation-delay: 3s; box-shadow: 0 0 22px #ee0979; }
+.bubble-6  { left: 40%; width: 35px;  height: 35px;  background: radial-gradient(circle at 30% 30%, #4facfe, #00f2fe); animation-duration: 9s;  animation-delay: 1.5s; box-shadow: 0 0 16px #4facfe; }
+.bubble-7  { left: 48%; width: 70px;  height: 70px;  background: radial-gradient(circle at 30% 30%, #a18cd1, #fbc2eb); animation-duration: 13s; animation-delay: 4s; box-shadow: 0 0 28px #a18cd1; }
+.bubble-8  { left: 55%; width: 45px;  height: 45px;  background: radial-gradient(circle at 30% 30%, #fd746c, #ff9068); animation-duration: 8s;  animation-delay: 2.5s; box-shadow: 0 0 20px #fd746c; }
+.bubble-9  { left: 63%; width: 28px;  height: 28px;  background: radial-gradient(circle at 30% 30%, #43e97b, #38f9d7); animation-duration: 10s; animation-delay: 0s; box-shadow: 0 0 14px #43e97b; }
+.bubble-10 { left: 70%; width: 60px;  height: 60px;  background: radial-gradient(circle at 30% 30%, #667eea, #764ba2); animation-duration: 14s; animation-delay: 3.5s; box-shadow: 0 0 25px #667eea; }
+.bubble-11 { left: 78%; width: 38px;  height: 38px;  background: radial-gradient(circle at 30% 30%, #f093fb, #f5576c); animation-duration: 9s;  animation-delay: 1s; box-shadow: 0 0 18px #f093fb; }
+.bubble-12 { left: 85%; width: 52px;  height: 52px;  background: radial-gradient(circle at 30% 30%, #4481eb, #04befe); animation-duration: 11s; animation-delay: 2s; box-shadow: 0 0 22px #4481eb; }
+.bubble-13 { left: 92%; width: 32px;  height: 32px;  background: radial-gradient(circle at 30% 30%, #fa709a, #fee140); animation-duration: 7s;  animation-delay: 4s; box-shadow: 0 0 16px #fa709a; }
+.bubble-14 { left: 15%; width: 75px;  height: 75px;  background: radial-gradient(circle at 30% 30%, #30cfd0, #330867); animation-duration: 15s; animation-delay: 5s; box-shadow: 0 0 30px #30cfd0; }
+.bubble-15 { left: 58%; width: 25px;  height: 25px;  background: radial-gradient(circle at 30% 30%, #f6d365, #fda085); animation-duration: 8s;  animation-delay: 1.5s; box-shadow: 0 0 14px #f6d365; }
+.bubble-16 { left: 72%; width: 48px;  height: 48px;  background: radial-gradient(circle at 30% 30%, #89f7fe, #66a6ff); animation-duration: 12s; animation-delay: 0.5s; box-shadow: 0 0 20px #89f7fe; }
+.bubble-17 { left: 30%; width: 62px;  height: 62px;  background: radial-gradient(circle at 30% 30%, #fddb92, #d1fdff); animation-duration: 10s; animation-delay: 3s; box-shadow: 0 0 25px #fddb92; }
+.bubble-18 { left: 45%; width: 34px;  height: 34px;  background: radial-gradient(circle at 30% 30%, #a1c4fd, #c2e9fb); animation-duration: 9s;  animation-delay: 2s; box-shadow: 0 0 16px #a1c4fd; }
+.bubble-19 { left: 82%; width: 54px;  height: 54px;  background: radial-gradient(circle at 30% 30%, #ff9a9e, #fecfef); animation-duration: 13s; animation-delay: 4.5s; box-shadow: 0 0 22px #ff9a9e; }
+.bubble-20 { left: 95%; width: 40px;  height: 40px;  background: radial-gradient(circle at 30% 30%, #a8edea, #fed6e3); animation-duration: 11s; animation-delay: 1s; box-shadow: 0 0 18px #a8edea; }
 
-/* ── Snowflakes ── */
+/* ── Colorful Snowflakes ── */
 .snowflake {
   position: absolute;
   top: -30px;
-  color: rgba(102,126,234,0.25);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   animation: fallSnow linear infinite;
   user-select: none;
+  filter: drop-shadow(0 0 6px currentColor);
 }
 
 @keyframes fallSnow {
   0% {
-    transform: translateY(-30px) rotate(0deg);
-    opacity: 0.6;
+    transform: translateY(-30px) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.8;
   }
   100% {
-    transform: translateY(110vh) rotate(360deg);
+    transform: translateY(110vh) rotate(360deg) scale(0.5);
     opacity: 0;
   }
 }
 
-.snowflake-1  { left: 3%;  font-size: 0.9rem; animation-duration: 10s; animation-delay: 0s; }
-.snowflake-2  { left: 8%;  font-size: 1.4rem; animation-duration: 12s; animation-delay: 1s; }
-.snowflake-3  { left: 14%; font-size: 0.8rem; animation-duration: 8s;  animation-delay: 2s; }
-.snowflake-4  { left: 20%; font-size: 1.6rem; animation-duration: 14s; animation-delay: 0.5s; }
-.snowflake-5  { left: 26%; font-size: 1rem;   animation-duration: 11s; animation-delay: 3s; }
-.snowflake-6  { left: 32%; font-size: 0.7rem; animation-duration: 9s;  animation-delay: 1.5s; }
-.snowflake-7  { left: 38%; font-size: 1.3rem; animation-duration: 13s; animation-delay: 4s; }
-.snowflake-8  { left: 44%; font-size: 0.9rem; animation-duration: 10s; animation-delay: 2.5s; }
-.snowflake-9  { left: 50%; font-size: 1.5rem; animation-duration: 15s; animation-delay: 0s; }
-.snowflake-10 { left: 56%; font-size: 0.8rem; animation-duration: 8s;  animation-delay: 3.5s; }
-.snowflake-11 { left: 62%; font-size: 1.2rem; animation-duration: 12s; animation-delay: 1s; }
-.snowflake-12 { left: 68%; font-size: 0.6rem; animation-duration: 9s;  animation-delay: 2s; }
-.snowflake-13 { left: 74%; font-size: 1.4rem; animation-duration: 11s; animation-delay: 4s; }
-.snowflake-14 { left: 80%; font-size: 1rem;   animation-duration: 13s; animation-delay: 1.5s; }
-.snowflake-15 { left: 86%; font-size: 0.9rem; animation-duration: 10s; animation-delay: 0.5s; }
-.snowflake-16 { left: 91%; font-size: 1.3rem; animation-duration: 14s; animation-delay: 3s; }
-.snowflake-17 { left: 96%; font-size: 0.7rem; animation-duration: 8s;  animation-delay: 2s; }
-.snowflake-18 { left: 11%; font-size: 1.1rem; animation-duration: 11s; animation-delay: 5s; }
-.snowflake-19 { left: 42%; font-size: 0.8rem; animation-duration: 9s;  animation-delay: 4.5s; }
-.snowflake-20 { left: 65%; font-size: 1.5rem; animation-duration: 12s; animation-delay: 1s; }
-.snowflake-21 { left: 7%;  font-size: 0.6rem; animation-duration: 10s; animation-delay: 2.5s; }
-.snowflake-22 { left: 22%; font-size: 1.2rem; animation-duration: 13s; animation-delay: 0s; }
-.snowflake-23 { left: 36%; font-size: 0.9rem; animation-duration: 9s;  animation-delay: 3.5s; }
-.snowflake-24 { left: 53%; font-size: 1.4rem; animation-duration: 14s; animation-delay: 1.5s; }
-.snowflake-25 { left: 77%; font-size: 0.7rem; animation-duration: 11s; animation-delay: 4s; }
-.snowflake-26 { left: 88%; font-size: 1.1rem; animation-duration: 8s;  animation-delay: 0.5s; }
-.snowflake-27 { left: 16%; font-size: 1.3rem; animation-duration: 15s; animation-delay: 2s; }
-.snowflake-28 { left: 47%; font-size: 0.8rem; animation-duration: 10s; animation-delay: 3s; }
-.snowflake-29 { left: 70%; font-size: 1rem;   animation-duration: 12s; animation-delay: 1s; }
-.snowflake-30 { left: 93%; font-size: 0.9rem; animation-duration: 9s;  animation-delay: 4.5s; }
+.snowflake-1  { left: 3%;  color: #ff6b9d; animation-duration: 10s; animation-delay: 0s;   font-size: 1.2rem; }
+.snowflake-2  { left: 8%;  color: #00d2ff; animation-duration: 12s; animation-delay: 1s;   font-size: 1.8rem; }
+.snowflake-3  { left: 14%; color: #f7971e; animation-duration: 8s;  animation-delay: 2s;   font-size: 1rem; }
+.snowflake-4  { left: 20%; color: #56ab2f; animation-duration: 14s; animation-delay: 0.5s; font-size: 2rem; }
+.snowflake-5  { left: 26%; color: #ee0979; animation-duration: 11s; animation-delay: 3s;   font-size: 1.3rem; }
+.snowflake-6  { left: 32%; color: #4facfe; animation-duration: 9s;  animation-delay: 1.5s; font-size: 0.9rem; }
+.snowflake-7  { left: 38%; color: #a18cd1; animation-duration: 13s; animation-delay: 4s;   font-size: 1.7rem; }
+.snowflake-8  { left: 44%; color: #fd746c; animation-duration: 10s; animation-delay: 2.5s; font-size: 1.1rem; }
+.snowflake-9  { left: 50%; color: #43e97b; animation-duration: 15s; animation-delay: 0s;   font-size: 2.2rem; }
+.snowflake-10 { left: 56%; color: #f6d365; animation-duration: 8s;  animation-delay: 3.5s; font-size: 1rem; }
+.snowflake-11 { left: 62%; color: #667eea; animation-duration: 12s; animation-delay: 1s;   font-size: 1.5rem; }
+.snowflake-12 { left: 68%; color: #f093fb; animation-duration: 9s;  animation-delay: 2s;   font-size: 0.8rem; }
+.snowflake-13 { left: 74%; color: #30cfd0; animation-duration: 11s; animation-delay: 4s;   font-size: 1.8rem; }
+.snowflake-14 { left: 80%; color: #ff9a9e; animation-duration: 13s; animation-delay: 1.5s; font-size: 1.3rem; }
+.snowflake-15 { left: 86%; color: #fda085; animation-duration: 10s; animation-delay: 0.5s; font-size: 1.1rem; }
+.snowflake-16 { left: 91%; color: #89f7fe; animation-duration: 14s; animation-delay: 3s;   font-size: 1.6rem; }
+.snowflake-17 { left: 96%; color: #fa709a; animation-duration: 8s;  animation-delay: 2s;   font-size: 0.9rem; }
+.snowflake-18 { left: 11%; color: #fee140; animation-duration: 11s; animation-delay: 5s;   font-size: 1.4rem; }
+.snowflake-19 { left: 42%; color: #00f2fe; animation-duration: 9s;  animation-delay: 4.5s; font-size: 1rem; }
+.snowflake-20 { left: 65%; color: #c44dff; animation-duration: 12s; animation-delay: 1s;   font-size: 2rem; }
+.snowflake-21 { left: 7%;  color: #38f9d7; animation-duration: 10s; animation-delay: 2.5s; font-size: 0.8rem; }
+.snowflake-22 { left: 22%; color: #ff6a00; animation-duration: 13s; animation-delay: 0s;   font-size: 1.5rem; }
+.snowflake-23 { left: 36%; color: #a8e063; animation-duration: 9s;  animation-delay: 3.5s; font-size: 1.2rem; }
+.snowflake-24 { left: 53%; color: #fbc2eb; animation-duration: 14s; animation-delay: 1.5s; font-size: 1.8rem; }
+.snowflake-25 { left: 77%; color: #4481eb; animation-duration: 11s; animation-delay: 4s;   font-size: 0.9rem; }
+.snowflake-26 { left: 88%; color: #fddb92; animation-duration: 8s;  animation-delay: 0.5s; font-size: 1.4rem; }
+.snowflake-27 { left: 16%; color: #f5576c; animation-duration: 15s; animation-delay: 2s;   font-size: 1.7rem; }
+.snowflake-28 { left: 47%; color: #66a6ff; animation-duration: 10s; animation-delay: 3s;   font-size: 1.1rem; }
+.snowflake-29 { left: 70%; color: #43e97b; animation-duration: 12s; animation-delay: 1s;   font-size: 1.3rem; }
+.snowflake-30 { left: 93%; color: #ff9a9e; animation-duration: 9s;  animation-delay: 4.5s; font-size: 1rem; }
