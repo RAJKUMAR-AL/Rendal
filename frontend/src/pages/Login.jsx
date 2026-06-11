@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
 import api from '../utils/api';
 import { LogIn, Mail, Lock, Home } from 'lucide-react';
 import './Auth.css';
