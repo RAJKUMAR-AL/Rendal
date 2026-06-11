@@ -178,6 +178,16 @@ const seedData = async () => {
         amenities: ['WiFi', 'Two Beds', 'AC', 'Attached Bathroom', 'Wardrobe', 'Shared Kitchen'],
         images: ['https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800'],
         capacity: 2, availability: true
+      },
+      {
+        title: '1BHK with Balcony - Madurai',
+        description: 'Newly renovated 1BHK with private balcony. Fully furnished with modern appliances.',
+        price: 18000,
+        roomType: '1BHK',
+        location: { city: 'Madurai', address: 'KK Nagar, Madurai', coordinates: { lat: 9.9312, lng: 78.1100 } },
+        amenities: ['WiFi', 'AC', 'Kitchen', 'Balcony', 'Parking'],
+        images: ['https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=800'],
+        capacity: 1, availability: true
       }
     ]);
     console.log('Created sample rooms');

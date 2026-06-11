@@ -116,7 +116,7 @@
   margin-bottom: 3rem;
 }
 
-/* ── Grid: exactly 3 columns, equal rows (6×3 = 18) ── */
+/* ── Grid: exactly 3 columns, 5 rows = 15 rooms ── */
 .rooms-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
